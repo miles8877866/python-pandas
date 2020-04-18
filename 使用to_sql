@@ -1,0 +1,4 @@
+	to_sql的函數其實不在pd中，而在io.sql中
+  
+pd.to_sql(...)應改成
+pd.io.sql.to_sql(frame=data,name='...',con=engine,index=False,if_exists='append')
