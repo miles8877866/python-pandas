@@ -11,6 +11,6 @@ engine = create_engine(DB_CONNECT_STRING, echo=True)
 DB_Session = sessionmaker(bind=engine)
 session = DB_Session()
  
-csv_data = pd.read_csv('hw0419.csv',encoding='utf-8')
+csv_data = pd.read_csv('db2.csv',encoding='utf-8')
 print(csv_data.shape)
-pd.io.sql.to_sql(frame=csv_data,name='score_data',con=engine,index=False,if_exists='append')
+pd.io.sql.to_sql(frame=csv_data,name='kmeans2',con=engine,index=False,if_exists='append')

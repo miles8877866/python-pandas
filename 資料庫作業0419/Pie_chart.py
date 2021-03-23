@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("hw0419.csv")
+data = pd.read_csv("C:\\Users\\as722\\Desktop\\資料庫\\資料庫作業0419\\hw0419.csv")
 PassA = 0
 FailA = 0
 PassB = 0
